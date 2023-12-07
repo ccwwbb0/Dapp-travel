@@ -24,5 +24,14 @@ describe("YourContract", function () {
       await yourContract.setGreeting(newGreeting);
       expect(await yourContract.greeting()).to.equal(newGreeting);
     });
+
+    it("Should emit setTing a new message events", async function () {
+      const [owner] = await ethers.getSigners();
+      const newGreeting = "Learn Scaffold-ETH 2! :)";
+
+      await expect(yourContract.setGreeting(newGreeting))
+        .to.emit(yourContract, "GreetingChange")
+        .withArgs(owner.address, newGreeting, false, 0);
+    });
   });
 });
