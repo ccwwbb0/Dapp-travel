@@ -39,7 +39,8 @@ const Debug: NextPage = () => {
                     className={`btn btn-secondary btn-sm normal-case font-thin ${
                       contractName === selectedContract ? "bg-base-300" : "bg-base-100"
                     }`}
-                    key={contractName}
+                    // key={contractName}
+                    key="123"
                     onClick={() => setSelectedContract(contractName)}
                   >
                     {contractName}
