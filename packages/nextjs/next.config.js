@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "img*.baidu.com",
+        hostname: "**.baidu.com",
       },
     ],
   },
