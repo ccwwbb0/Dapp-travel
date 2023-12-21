@@ -5,9 +5,9 @@
 import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 
 const deployedContracts = {
-  31337: {
+  11155111: {
     MyErc721: {
-      address: "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      address: "0x78a916b63dFa3ae35413773368b1Be8A1CE1db63",
       abi: [
         {
           inputs: [
@@ -487,7 +487,7 @@ const deployedContracts = {
       },
     },
     YourContract: {
-      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      address: "0xa88614995808353e95766080f89B504512128988",
       abi: [
         {
           inputs: [
